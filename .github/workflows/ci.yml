@@ -8,12 +8,12 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 安装Python
+      - name: 配置Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: 直接安装pytest
+      - name: 安装依赖
         run: pip install pytest
 
       - name: 运行测试
